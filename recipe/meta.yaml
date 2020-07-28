@@ -1,6 +1,6 @@
 {% set name = "ripser" %}
-{% set version = "0.5.2" %}
-{% set sha256 = "f59163dacdeddd4b552d09f6a76f04d4d4a290444a50e414b9dc16090401594f" %}
+{% set version = "0.5.3" %}
+{% set sha256 = "cb63a03205511cd3d2aae586cec9515dddfbec3ce269dd0560911b0a55d75632" %}
 
 package:
   name: {{ name|lower }}
