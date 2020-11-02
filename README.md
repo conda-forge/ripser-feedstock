@@ -5,9 +5,13 @@ Home: http://github.com/scikit-tda/ripser.py
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ripser-feedstock/blob/master/LICENSE.txt)
 
 Summary: A Lean Persistent Homology Library for Python
+
+Development: https://github.com/scikit-tda/ripser.py
+
+Documentation: http://ripser.scikit-tda.org/
 
 Ripser.py is a lean persistent homology package for Python. Building on the blazing
 fast C++ Ripser package as the core computational engine, Ripser.py provides an
