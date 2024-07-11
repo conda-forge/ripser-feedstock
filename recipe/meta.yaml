@@ -1,6 +1,6 @@
 {% set name = "ripser" %}
-{% set version = "0.6.4" %}
-{% set sha256 = "7a9b3e9420869c50df85e9a446c912b8af81621e62ca1af8f9492c6335b7e594" %}
+{% set version = "0.6.9" %}
+{% set sha256 = "2d7a133cf6fa9006596c34d425fb94c4dd5a8be2fd5f67c883160d1dea64793f" %}
 
 package:
   name: {{ name|lower }}
@@ -11,12 +11,13 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
 
   host:
     - python
