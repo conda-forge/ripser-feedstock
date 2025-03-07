@@ -1,17 +1,17 @@
 {% set name = "ripser" %}
-{% set version = "0.6.10" %}
-{% set sha256 = "dccafaf97ad2395bc66cb376e5fbe0f6f264372b298fd093e4107132c1f79484" %}
+{% set version = "0.6.11" %}
+{% set sha256 = "3baf01b28708809bf13ce746cae3cabac1e35cfbbd20cf06fb3d53d569426bc6" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
