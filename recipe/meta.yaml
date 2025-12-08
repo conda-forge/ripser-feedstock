@@ -37,10 +37,15 @@ requirements:
     - persim
 
 test:
+  source_files:
+    - test
   imports:
     - ripser
   requires:
     - pytest
+    - numpy
+  commands:
+    - pytest -v test
 
 about:
   home: http://github.com/scikit-tda/ripser.py
