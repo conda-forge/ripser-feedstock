@@ -38,14 +38,14 @@ requirements:
 
 test:
   source_files:
-    - test
+    - tests
   imports:
     - ripser
   requires:
     - pytest
     - numpy
   commands:
-    - pytest -v test
+    - pytest -v tests
 
 about:
   home: http://github.com/scikit-tda/ripser.py
